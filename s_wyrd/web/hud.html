@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="hud.css" />
+</head>
+<body>
+    <div id="hud" class="hidden">
+        <div class="hud-head">
+            <span id="hud-name">Wyrd Health</span>
+            <span id="hud-class"></span>
+        </div>
+
+        <div class="bar-wrap" title="Wyrd Health — wound tier">
+            <div id="wound-fill" class="bar-fill"></div>
+            <div class="bar-ticks">
+                <i></i><i></i><i></i><i></i>
+            </div>
+        </div>
+        <div id="wound-label" class="wound-label">Unharmed</div>
+
+        <div id="wp-row" class="wp-row hidden">
+            <div class="wp-bar-wrap">
+                <div id="wp-fill" class="wp-fill"></div>
+            </div>
+            <span id="wp-text" class="wp-text">WP 0 / 0</span>
+        </div>
+    </div>
+    <script src="hud.js"></script>
+</body>
+</html>
